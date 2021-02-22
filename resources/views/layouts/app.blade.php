@@ -23,6 +23,20 @@
         </style>
     </head>
     <body>
+
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route('home')}}">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route('students.index')}}">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('classes.index')}}">Classes</a>
+                </li>
+            </ul>
+        </nav>
         
         @yield('content')
     </body>
